@@ -1,0 +1,238 @@
+/********** SK MONT CSS **********/
+
+/********** reset **********/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+/********** HTML basic style **********/
+body {
+	background-color: #f2f2f2;
+	color: #264b70;
+	font-family: Arial, sans-serif;
+}
+
+ul {list-style-type: none;}
+
+a {
+	text-decoration: none;
+	color: #264b70;
+}
+
+a:hover {color: #f58c5d !important;}
+
+a img:hover {opacity: 0.5;}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Racing Sans One', cursive;
+	font-weight: lighter;
+}
+
+img, video {
+	max-width: 100%;
+	height: auto;
+}
+
+h1, h2, h3, p, ul, li{margin-bottom: 1em;}
+
+
+/********** helper classes **********/
+.align-left {text-align: left;}
+.align-right {text-align: right;}
+.align-center {text-align: center;}
+.align-justify {text-align: justify;}
+
+
+/********** layout **********/
+#menu, #content, #page-footer, #banner {padding: 1rem;}
+
+#page-header, #page-footer {
+	background-color: #264b70;
+	color: #f2f2f2;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.row {margin-bottom: 1rem;}
+.row:last-child {margin-bottom: 0;}
+
+.col {
+	float: left;
+	margin-right: 2%;
+}
+
+.col-right {
+	float: right;
+	margin-left: 2%;
+}
+.col:last-child {margin-right: 0;}
+
+.col-3 {width: 23.5%;}
+.col-4 {width: 32%;}
+.col-6 {width: 49%;}
+.col-8 {width: 66%;}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+.zoom-in {
+	transform: scale(1);
+	transition: 0.3s ease-in-out;
+}
+
+.zoom-in:hover {transform: scale(1.5);}
+
+
+/********** navigation **********/
+#menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #264b70;
+}
+
+#menu .logo {
+  position: relative;
+  display: inline;
+  width: 100px;
+}
+
+#mobile-button {display: none;}
+#menu ul {margin-bottom: 0;}
+#menu li {
+	display: inline;
+	margin-left: 2rem;
+}
+
+#menu a {
+	color: #f2f2f2;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+
+/********** banner **********/
+#banner {
+	background: url(img/banner.jpg) center bottom/cover no-repeat;
+	height: 41vh;
+	padding-top: 5rem;	/* 440px/1080px  */
+}
+
+#banner h1 {font-size: 6rem /*96px*/;}
+
+
+/********** content area **********/
+#content h4 {margin-bottom: 1rem;}
+
+
+/********** contact **********/
+#content span {font-weight: bold;}
+
+
+/********** footer area **********/
+#page-footer a {margin: 0 1rem;}
+
+
+/********** Media Queries **********/
+@media (min-width: 992px) {
+
+	#menu ul {display: block !important;}
+}
+
+/********** mali desktop monitori, laptopi, tableti **********/
+@media (max-width: 1199px) {
+	
+	.col-6 {width: 100%;}
+
+	#primary img {margin-bottom: 1rem;}	
+}
+
+/********** svi mobilni uređaji **********/
+@media (max-width: 991px) {
+	
+	#banner h1 {font-size: 10vw;}
+	
+	.col {
+		float: none;
+		margin-right: 0;
+	}
+
+	.col-4, .col-6, .col-8 {width: 100%;}
+	
+	#menu a, #sidebar a, #page-footer a {
+		display: block;
+		padding: 1rem 0;
+	}
+	
+	#page-footer a {display: inline-block;}
+
+	#page-footer .align-right {text-align: center;}
+
+	form {margin-bottom: 1rem;}
+
+
+/********** mobilna navigacija **********/
+  #menu {position: fixed;}
+
+	#menu .logo {display: flex;}
+
+  #mobile-button {
+		display: block;
+		float: right;
+	}
+
+  #menu ul {
+    text-align: center;
+    display: none;
+  }
+
+  #menu li {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media (max-width: 991px) and (orientation: landscape) {
+	
+	#banner {height: 100vh;}
+}
+/***************************************************************************************************************************************************/
+form {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	border-radius: 10px;
+}
+
+form input, form textarea {
+	border: 0;
+	margin: 10px 0;
+	padding: 20px;
+	outline: none;
+	/*background: ;*****************/
+	font-size: 16px;
+}
+
+form button {
+	padding: 15px;
+	background: #264b70;
+	color: #f2f2f2;
+	font-size: 18px;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	width: 150px;
+	margin: 20px auto 0;
+	border-radius: 30px;
+}

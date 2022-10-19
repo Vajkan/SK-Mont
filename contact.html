@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="zmitic.sk@gmail.com">
+    <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>SK Mont</title>
+  </head>
+  <body>
+    <!--@@@@@@@@@@@@@ Header Area @@@@@@@@@@@@@-->
+    <header id="page-header">
+      <!---------- navigation ---------->
+      <nav id="menu">
+        <!---------- wrapper 1 ---------->
+        <div class="wrapper clearfix">
+          <!---------- mobile button ------------>
+          <div id="mobile-button">
+            <img src="img/menu.png" alt="menu">
+          </div>
+          <!---------- logo ---------->
+          <div class="col col-4 logo">
+            <img src="img/logo.png" alt="SK Mont">
+          </div>
+          <!---------- menu ---------->
+          <div class="col-right col-8 align-right">
+            <ul>
+              <li><a href="index.html">Naslovnica</a></li>
+              <li><a href="about.html">O nama</a></li>
+              <li><a href="services.html">Usluge</a></li>
+              <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+          </div>
+        </div>
+        <!---------- wrapper 1 end ---------->
+      </nav>
+      <!---------- navigation end ---------->
+      <!---------- banner ---------->
+      <div id="banner">
+        <!---------- wrapper 2 ---------->
+        <div class="wrapper">
+          <h1>SK MONT</h1>
+        </div>
+        <!---------- wrapper 2 end ---------->
+      </div>
+      <!---------- banner end ---------->
+    </header>
+
+    <!--@@@@@@@@@@@@@ Content Area @@@@@@@@@@@@@-->
+    <main id="content">
+      <!---------- wrapper 1 ---------->
+      <div class="wrapper clearfix">
+        <!---------- primary section ---------->
+        <section id="primary" class="col col-8">
+          <!---------- article 1 ---------->
+          <article class="row clearfix">
+            <h2>Kontakt</h2>
+            <!---------- column 1 ---------->
+            <div class="col">
+              <h3>Naša lokacija</h3>
+            </div>
+            <!---------- google map ---------->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.737457636207!2d16.375613915766632!3d45.45494644208149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4766ef743cde4e41%3A0x2b017c80e97503c4!2sSK%20MONT!5e0!3m2!1shr!2shr!4v1665879903184!5m2!1shr!2shr" width="100%" height="380px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!---------- google map end ---------->
+          </article>
+          <!---------- article 1 end ---------->
+          <!---------- article 2 ---------->
+          <article class="row clearfix">
+            <!---------- column 1 ---------->
+            <div class="col col-6">
+              <h3>Kontakt informacije</h3>
+              <!---------- column 1a ---------->
+              <div class="col">
+                <ul>
+                  <li>Ul. Andrije Hebranga 16, Sisak</li>
+                  <li><a href="#">email@adresa.com</a></li>
+                  <li>091 755 3670</li>
+                  <li>07 - 15h, nedjeljom ne radimo</li>
+                </ul>
+              </div>
+            </div>
+            <!---------- column 2 ---------->
+            <div class="col col-6">
+              <h3>Pošaljite poruku</h3>
+              <form onsubmit="sendEmail(); reset(); return false;">
+                <input type="text" id="name" placeholder="Vaše ime" required>
+                <input type="email" id="email" placeholder="Vaš email" required>
+                <input type="text" id="phone" placeholder="Vaš broj" required>
+                <textarea id="message" rows="4" placeholder="Kako Vam možemo pomoći?"></textarea>
+                <button type="submit">Pošalji</button>
+              </form>
+            </div>
+          </article>
+          <!---------- article 2 end ---------->
+        </section>
+        <!---------- primary section end ---------->
+        <!---------- sidebar ---------->
+        <aside id="sidebar" class="col col-4">
+          <h2>Last minute</h2>
+          <ul>
+            <li><a href="#">Lorem ipsum dolor</a></li>
+            <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+            <li><a href="#">Lorem ipsum</a></li>
+            <li><a href="#">Lorem ipsum dolor sit</a></li>
+            <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+          </ul>
+          <video controls>
+            <source src="video/work.mp4" type="video/mp4">
+          </video>
+        </aside>
+        <!---------- sidebar end ---------->
+      </div>
+      <!---------- wrapper 1 end ---------->
+    </main>
+
+    <!--@@@@@@@@@@@@@ Footer Area @@@@@@@@@@@@@-->
+    <footer id="page-footer">
+      <!---------- wrapper 1 ---------->
+      <div class="wrapper">
+        <h1>SK MONT</h1>
+        <!---------- row ---------->
+        <div class="row clearfix">
+          <!---------- column 1 ---------->
+          <div class="col col-4">
+            Naš uslužni obrt bavi se uvođenjem instalacija vodovoda, kanalizacije, plina i instalacija za grijanje i klimatizaciju.
+          </div>
+          <!---------- column 2 ---------->
+          <div class="col col-4 align-center">
+            <a href="https://facebook.com" target="_blank">
+              <img src="img/facebook.png" alt="facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+              <img src="img/twitter.png" alt="twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <img src="img/instagram.png" alt="instagram">
+            </a>
+          </div>
+          <!---------- column 3 ---------->
+          <div class="col col-4 align-right">
+            SK MONT &copy; 2020.
+          </div>
+        </div>
+        <!---------- row end ---------->
+      </div>
+      <!---------- wrapper 1 end ---------->
+    </footer>
+
+    <!---------- scripts ---------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#mobile-button').click(function(){
+          $('#menu ul').slideToggle();
+        });
+      })
+    </script>
+
+    <!--
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          Host : "smtp.elasticemail.com",
+          Username : "username",
+          Password : "password",
+          To : 'them@website.com',
+          From : "you@isp.com",
+          Subject : "This is the subject",
+          Body : "And this is the body"
+        }).then(
+          message => alert(message)
+        );
+      }
+    </script>
+    -->
+    <!---------- scripts end ---------->
+  </body>
+</html>
